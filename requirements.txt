@@ -1,0 +1,7 @@
+PyYAML
+Jinja2
+snowflake-connector-python
+colorama
+snowflake-snowpark-python
+snowflake-snowpark-python[pandas]
+colorlog

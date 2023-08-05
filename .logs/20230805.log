@@ -1,0 +1,416 @@
+2023-08-05 20:13:07,638:[32mSTART..........[0m model_nested_JSON_objects parent_path = ENTRY[0m
+2023-08-05 20:13:07,740:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (1) recursive call starts with 2-row Dataframe. 
+	Global processed_fields = set()
+[0m
+2023-08-05 20:13:07,809:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: NAME
+[0m
+2023-08-05 20:13:08,124:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"NAME" reach ends of path. "NAME" > processed_fields
+[0m
+2023-08-05 20:13:08,124:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: LAPTOPS
+[0m
+2023-08-05 20:13:08,354:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	LAPTOPS is an ARRAY
+[0m
+2023-08-05 20:13:08,354:[32mSTART..........[0m flatten_array             array_field = LAPTOPS[0m
+2023-08-05 20:13:08,355:[37mDEBUG     [0m LINE51    unpack_as_separate_tables.flatten_array
+	Flattening array "LAPTOPS".............
+[0m
+2023-08-05 20:13:08,515:[37mDEBUG     [0m LINE61    unpack_as_separate_tables.flatten_array
+	"LAPTOPS" after flatten generated a new df of 3 rows
+[0m
+2023-08-05 20:13:08,515:[32mSUCCEEDED......[0m flatten_array             array_field = LAPTOPS[0m
+2023-08-05 20:13:08,516:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: ID
+[0m
+2023-08-05 20:13:08,742:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"ID" reach ends of path. "ID" > processed_fields
+[0m
+2023-08-05 20:13:08,742:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: AGE
+[0m
+2023-08-05 20:13:08,957:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"AGE" reach ends of path. "AGE" > processed_fields
+[0m
+2023-08-05 20:13:08,957:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DATASET_SERVICE
+[0m
+2023-08-05 20:13:09,194:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DATASET_SERVICE" reach ends of path. "DATASET_SERVICE" > processed_fields
+[0m
+2023-08-05 20:13:09,194:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS
+[0m
+2023-08-05 20:13:09,395:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	DEPARTMENTS is an ARRAY
+[0m
+2023-08-05 20:13:09,396:[32mSTART..........[0m flatten_array             array_field = DEPARTMENTS[0m
+2023-08-05 20:13:09,397:[37mDEBUG     [0m LINE51    unpack_as_separate_tables.flatten_array
+	Flattening array "DEPARTMENTS".............
+[0m
+2023-08-05 20:13:09,552:[37mDEBUG     [0m LINE61    unpack_as_separate_tables.flatten_array
+	"DEPARTMENTS" after flatten generated a new df of 2 rows
+[0m
+2023-08-05 20:13:09,552:[32mSUCCEEDED......[0m flatten_array             array_field = DEPARTMENTS[0m
+2023-08-05 20:13:09,554:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: ADDRESS
+[0m
+2023-08-05 20:13:09,766:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	ADDRESS is an OBJECT
+[0m
+2023-08-05 20:13:09,766:[32mSTART..........[0m expand_object_subfields   obj_field = ADDRESS[0m
+2023-08-05 20:13:09,929:[37mDEBUG     [0m LINE87    unpack_as_separate_tables.expand_object_subfields
+	ADDRESS obj has 4 subfields: ['state', 'street', 'zip_code', 'suburb']
+[0m
+2023-08-05 20:13:09,930:[37mDEBUG     [0m LINE93    unpack_as_separate_tables.expand_object_subfields
+	Expanded all subfields and drop the parent obj field.
+[0m
+2023-08-05 20:13:09,930:[32mSUCCEEDED......[0m expand_object_subfields   obj_field = ADDRESS[0m
+2023-08-05 20:13:09,930:[37mDEBUG     [0m LINE155   unpack_as_separate_tables.model_nested_JSON_objects
+	"ADDRESS" reach ends of path. "ADDRESS" > processed_fields
+[0m
+2023-08-05 20:13:09,930:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: CONTACTS
+[0m
+2023-08-05 20:13:10,135:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	CONTACTS is an OBJECT
+[0m
+2023-08-05 20:13:10,135:[32mSTART..........[0m expand_object_subfields   obj_field = CONTACTS[0m
+2023-08-05 20:13:10,319:[37mDEBUG     [0m LINE87    unpack_as_separate_tables.expand_object_subfields
+	CONTACTS obj has 2 subfields: ['email', 'phone']
+[0m
+2023-08-05 20:13:10,320:[37mDEBUG     [0m LINE93    unpack_as_separate_tables.expand_object_subfields
+	Expanded all subfields and drop the parent obj field.
+[0m
+2023-08-05 20:13:10,321:[32mSUCCEEDED......[0m expand_object_subfields   obj_field = CONTACTS[0m
+2023-08-05 20:13:10,322:[37mDEBUG     [0m LINE155   unpack_as_separate_tables.model_nested_JSON_objects
+	"CONTACTS" reach ends of path. "CONTACTS" > processed_fields
+[0m
+2023-08-05 20:13:10,323:[32mSTART..........[0m model_nested_JSON_objects parent_path = ENTRY[0m
+2023-08-05 20:13:10,387:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (2) recursive call starts with 2-row Dataframe. 
+	Global processed_fields = {'NAME', 'ID', 'AGE', 'DATASET_SERVICE', 'ADDRESS', 'CONTACTS'}
+[0m
+2023-08-05 20:13:10,421:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: ADDRESS__STATE
+[0m
+2023-08-05 20:13:10,673:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"ADDRESS__STATE" reach ends of path. "ADDRESS__STATE" > processed_fields
+[0m
+2023-08-05 20:13:10,674:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: ADDRESS__STREET
+[0m
+2023-08-05 20:13:10,894:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"ADDRESS__STREET" reach ends of path. "ADDRESS__STREET" > processed_fields
+[0m
+2023-08-05 20:13:10,894:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: ADDRESS__ZIP_CODE
+[0m
+2023-08-05 20:13:11,118:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"ADDRESS__ZIP_CODE" reach ends of path. "ADDRESS__ZIP_CODE" > processed_fields
+[0m
+2023-08-05 20:13:11,118:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: CONTACTS__PHONE
+[0m
+2023-08-05 20:13:11,315:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"CONTACTS__PHONE" reach ends of path. "CONTACTS__PHONE" > processed_fields
+[0m
+2023-08-05 20:13:11,315:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: CONTACTS__EMAIL
+[0m
+2023-08-05 20:13:11,543:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"CONTACTS__EMAIL" reach ends of path. "CONTACTS__EMAIL" > processed_fields
+[0m
+2023-08-05 20:13:11,543:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: ADDRESS__SUBURB
+[0m
+2023-08-05 20:13:11,752:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"ADDRESS__SUBURB" reach ends of path. "ADDRESS__SUBURB" > processed_fields
+[0m
+2023-08-05 20:13:11,752:[32mSTART..........[0m model_nested_JSON_objects parent_path = ENTRY[0m
+2023-08-05 20:13:11,812:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (3) recursive call starts with 2-row Dataframe. 
+	Global processed_fields = {'NAME', 'ADDRESS__STATE', 'ADDRESS__STREET', 'ID', 'ADDRESS__ZIP_CODE', 'CONTACTS__PHONE', 'AGE', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'ADDRESS', 'CONTACTS', 'ADDRESS__SUBURB'}
+[0m
+2023-08-05 20:13:11,812:[33mWARNING   [0m LINE122   unpack_as_separate_tables.model_nested_JSON_objects
+	Terminated at 3 recursive calls
+[0m
+2023-08-05 20:13:11,814:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = ENTRY[0m
+2023-08-05 20:13:11,816:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = ENTRY[0m
+2023-08-05 20:13:11,816:[37mDEBUG     [0m LINE169   unpack_as_separate_tables.model_nested_JSON_objects
+	Process new df LAPTOPS
+[0m
+2023-08-05 20:13:11,816:[32mSTART..........[0m model_nested_JSON_objects parent_path = LAPTOPS[0m
+2023-08-05 20:13:11,881:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (2) recursive call starts with 3-row Dataframe. 
+	Global processed_fields = {'NAME', 'ADDRESS__STATE', 'ADDRESS__STREET', 'ID', 'ADDRESS__ZIP_CODE', 'CONTACTS__PHONE', 'AGE', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'ADDRESS', 'CONTACTS', 'ADDRESS__SUBURB'}
+[0m
+2023-08-05 20:13:11,908:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: LAPTOPS
+[0m
+2023-08-05 20:13:12,134:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	LAPTOPS is an OBJECT
+[0m
+2023-08-05 20:13:12,134:[32mSTART..........[0m expand_object_subfields   obj_field = LAPTOPS[0m
+2023-08-05 20:13:12,298:[37mDEBUG     [0m LINE87    unpack_as_separate_tables.expand_object_subfields
+	LAPTOPS obj has 2 subfields: ['qty', 'brand']
+[0m
+2023-08-05 20:13:12,299:[37mDEBUG     [0m LINE93    unpack_as_separate_tables.expand_object_subfields
+	Expanded all subfields and drop the parent obj field.
+[0m
+2023-08-05 20:13:12,299:[32mSUCCEEDED......[0m expand_object_subfields   obj_field = LAPTOPS[0m
+2023-08-05 20:13:12,301:[37mDEBUG     [0m LINE155   unpack_as_separate_tables.model_nested_JSON_objects
+	"LAPTOPS" reach ends of path. "LAPTOPS" > processed_fields
+[0m
+2023-08-05 20:13:12,301:[32mSTART..........[0m model_nested_JSON_objects parent_path = LAPTOPS[0m
+2023-08-05 20:13:12,366:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (3) recursive call starts with 3-row Dataframe. 
+	Global processed_fields = {'NAME', 'ADDRESS__STATE', 'ADDRESS__STREET', 'LAPTOPS', 'ID', 'ADDRESS__ZIP_CODE', 'CONTACTS__PHONE', 'AGE', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'ADDRESS', 'CONTACTS', 'ADDRESS__SUBURB'}
+[0m
+2023-08-05 20:13:12,405:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: LAPTOPS__BRAND
+[0m
+2023-08-05 20:13:12,631:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"LAPTOPS__BRAND" reach ends of path. "LAPTOPS__BRAND" > processed_fields
+[0m
+2023-08-05 20:13:12,631:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: LAPTOPS__QTY
+[0m
+2023-08-05 20:13:12,865:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"LAPTOPS__QTY" reach ends of path. "LAPTOPS__QTY" > processed_fields
+[0m
+2023-08-05 20:13:12,865:[32mSTART..........[0m model_nested_JSON_objects parent_path = LAPTOPS[0m
+2023-08-05 20:13:12,939:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (4) recursive call starts with 3-row Dataframe. 
+	Global processed_fields = {'NAME', 'ADDRESS__STATE', 'ADDRESS__STREET', 'LAPTOPS', 'ID', 'ADDRESS__ZIP_CODE', 'CONTACTS__PHONE', 'LAPTOPS__BRAND', 'AGE', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'LAPTOPS__QTY', 'ADDRESS', 'CONTACTS', 'ADDRESS__SUBURB'}
+[0m
+2023-08-05 20:13:12,939:[33mWARNING   [0m LINE122   unpack_as_separate_tables.model_nested_JSON_objects
+	Terminated at 4 recursive calls
+[0m
+2023-08-05 20:13:12,940:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = LAPTOPS[0m
+2023-08-05 20:13:12,940:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = LAPTOPS[0m
+2023-08-05 20:13:12,943:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = LAPTOPS[0m
+2023-08-05 20:13:12,944:[37mDEBUG     [0m LINE169   unpack_as_separate_tables.model_nested_JSON_objects
+	Process new df DEPARTMENTS
+[0m
+2023-08-05 20:13:12,944:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS[0m
+2023-08-05 20:13:13,019:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (2) recursive call starts with 2-row Dataframe. 
+	Global processed_fields = {'NAME', 'ADDRESS__STATE', 'ADDRESS__STREET', 'LAPTOPS', 'ID', 'ADDRESS__ZIP_CODE', 'CONTACTS__PHONE', 'LAPTOPS__BRAND', 'AGE', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'LAPTOPS__QTY', 'ADDRESS', 'CONTACTS', 'ADDRESS__SUBURB'}
+[0m
+2023-08-05 20:13:13,048:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS
+[0m
+2023-08-05 20:13:13,297:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	DEPARTMENTS is an OBJECT
+[0m
+2023-08-05 20:13:13,297:[32mSTART..........[0m expand_object_subfields   obj_field = DEPARTMENTS[0m
+2023-08-05 20:13:13,464:[37mDEBUG     [0m LINE87    unpack_as_separate_tables.expand_object_subfields
+	DEPARTMENTS obj has 3 subfields: ['department_id', 'department_name', 'projects']
+[0m
+2023-08-05 20:13:13,465:[37mDEBUG     [0m LINE93    unpack_as_separate_tables.expand_object_subfields
+	Expanded all subfields and drop the parent obj field.
+[0m
+2023-08-05 20:13:13,465:[32mSUCCEEDED......[0m expand_object_subfields   obj_field = DEPARTMENTS[0m
+2023-08-05 20:13:13,466:[37mDEBUG     [0m LINE155   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS" reach ends of path. "DEPARTMENTS" > processed_fields
+[0m
+2023-08-05 20:13:13,466:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS[0m
+2023-08-05 20:13:13,540:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (3) recursive call starts with 2-row Dataframe. 
+	Global processed_fields = {'NAME', 'ADDRESS__STATE', 'ADDRESS__STREET', 'LAPTOPS', 'ID', 'ADDRESS__ZIP_CODE', 'CONTACTS__PHONE', 'LAPTOPS__BRAND', 'AGE', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'DEPARTMENTS', 'LAPTOPS__QTY', 'ADDRESS', 'CONTACTS', 'ADDRESS__SUBURB'}
+[0m
+2023-08-05 20:13:13,573:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__DEPARTMENT_NAME
+[0m
+2023-08-05 20:13:13,852:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__DEPARTMENT_NAME" reach ends of path. "DEPARTMENTS__DEPARTMENT_NAME" > processed_fields
+[0m
+2023-08-05 20:13:13,852:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS
+[0m
+2023-08-05 20:13:14,071:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	DEPARTMENTS__PROJECTS is an ARRAY
+[0m
+2023-08-05 20:13:14,071:[32mSTART..........[0m flatten_array             array_field = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:14,073:[37mDEBUG     [0m LINE51    unpack_as_separate_tables.flatten_array
+	Flattening array "DEPARTMENTS__PROJECTS".............
+[0m
+2023-08-05 20:13:14,240:[37mDEBUG     [0m LINE61    unpack_as_separate_tables.flatten_array
+	"DEPARTMENTS__PROJECTS" after flatten generated a new df of 3 rows
+[0m
+2023-08-05 20:13:14,242:[32mSUCCEEDED......[0m flatten_array             array_field = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:14,242:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__DEPARTMENT_ID
+[0m
+2023-08-05 20:13:14,463:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__DEPARTMENT_ID" reach ends of path. "DEPARTMENTS__DEPARTMENT_ID" > processed_fields
+[0m
+2023-08-05 20:13:14,463:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS[0m
+2023-08-05 20:13:14,537:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (4) recursive call starts with 2-row Dataframe. 
+	Global processed_fields = {'NAME', 'ADDRESS__STATE', 'ADDRESS__STREET', 'LAPTOPS', 'ID', 'ADDRESS__ZIP_CODE', 'CONTACTS__PHONE', 'LAPTOPS__BRAND', 'AGE', 'DEPARTMENTS__DEPARTMENT_NAME', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'DEPARTMENTS', 'LAPTOPS__QTY', 'ADDRESS', 'CONTACTS', 'ADDRESS__SUBURB', 'DEPARTMENTS__DEPARTMENT_ID'}
+[0m
+2023-08-05 20:13:14,576:[33mWARNING   [0m LINE122   unpack_as_separate_tables.model_nested_JSON_objects
+	Terminated at 4 recursive calls
+[0m
+2023-08-05 20:13:14,578:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS[0m
+2023-08-05 20:13:14,579:[37mDEBUG     [0m LINE169   unpack_as_separate_tables.model_nested_JSON_objects
+	Process new df DEPARTMENTS__PROJECTS
+[0m
+2023-08-05 20:13:14,579:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:14,663:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (4) recursive call starts with 3-row Dataframe. 
+	Global processed_fields = {'NAME', 'ADDRESS__STATE', 'ADDRESS__STREET', 'LAPTOPS', 'ID', 'ADDRESS__ZIP_CODE', 'CONTACTS__PHONE', 'LAPTOPS__BRAND', 'AGE', 'DEPARTMENTS__DEPARTMENT_NAME', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'DEPARTMENTS', 'LAPTOPS__QTY', 'ADDRESS', 'CONTACTS', 'ADDRESS__SUBURB', 'DEPARTMENTS__DEPARTMENT_ID'}
+[0m
+2023-08-05 20:13:14,689:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS
+[0m
+2023-08-05 20:13:14,911:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	DEPARTMENTS__PROJECTS is an OBJECT
+[0m
+2023-08-05 20:13:14,911:[32mSTART..........[0m expand_object_subfields   obj_field = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:15,108:[37mDEBUG     [0m LINE87    unpack_as_separate_tables.expand_object_subfields
+	DEPARTMENTS__PROJECTS obj has 5 subfields: ['project_name', 'tasks', 'end_date', 'project_id', 'start_date']
+[0m
+2023-08-05 20:13:15,108:[37mDEBUG     [0m LINE93    unpack_as_separate_tables.expand_object_subfields
+	Expanded all subfields and drop the parent obj field.
+[0m
+2023-08-05 20:13:15,108:[32mSUCCEEDED......[0m expand_object_subfields   obj_field = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:15,109:[37mDEBUG     [0m LINE155   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS" reach ends of path. "DEPARTMENTS__PROJECTS" > processed_fields
+[0m
+2023-08-05 20:13:15,110:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:15,181:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (5) recursive call starts with 3-row Dataframe. 
+	Global processed_fields = {'ADDRESS__STATE', 'CONTACTS__PHONE', 'ADDRESS__SUBURB', 'NAME', 'AGE', 'LAPTOPS__QTY', 'DEPARTMENTS__PROJECTS', 'DEPARTMENTS__DEPARTMENT_ID', 'ADDRESS__STREET', 'ID', 'DEPARTMENTS', 'ADDRESS', 'CONTACTS', 'LAPTOPS__BRAND', 'LAPTOPS', 'ADDRESS__ZIP_CODE', 'DEPARTMENTS__DEPARTMENT_NAME', 'CONTACTS__EMAIL', 'DATASET_SERVICE'}
+[0m
+2023-08-05 20:13:15,209:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__END_DATE
+[0m
+2023-08-05 20:13:15,450:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS__END_DATE" reach ends of path. "DEPARTMENTS__PROJECTS__END_DATE" > processed_fields
+[0m
+2023-08-05 20:13:15,450:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__PROJECT_NAME
+[0m
+2023-08-05 20:13:15,736:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS__PROJECT_NAME" reach ends of path. "DEPARTMENTS__PROJECTS__PROJECT_NAME" > processed_fields
+[0m
+2023-08-05 20:13:15,736:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__START_DATE
+[0m
+2023-08-05 20:13:15,966:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS__START_DATE" reach ends of path. "DEPARTMENTS__PROJECTS__START_DATE" > processed_fields
+[0m
+2023-08-05 20:13:15,967:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__PROJECT_ID
+[0m
+2023-08-05 20:13:16,192:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS__PROJECT_ID" reach ends of path. "DEPARTMENTS__PROJECTS__PROJECT_ID" > processed_fields
+[0m
+2023-08-05 20:13:16,192:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__TASKS
+[0m
+2023-08-05 20:13:16,446:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	DEPARTMENTS__PROJECTS__TASKS is an ARRAY
+[0m
+2023-08-05 20:13:16,447:[32mSTART..........[0m flatten_array             array_field = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:16,449:[37mDEBUG     [0m LINE51    unpack_as_separate_tables.flatten_array
+	Flattening array "DEPARTMENTS__PROJECTS__TASKS".............
+[0m
+2023-08-05 20:13:16,614:[37mDEBUG     [0m LINE61    unpack_as_separate_tables.flatten_array
+	"DEPARTMENTS__PROJECTS__TASKS" after flatten generated a new df of 5 rows
+[0m
+2023-08-05 20:13:16,615:[32mSUCCEEDED......[0m flatten_array             array_field = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:16,616:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:16,845:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (6) recursive call starts with 3-row Dataframe. 
+	Global processed_fields = {'ADDRESS__STATE', 'CONTACTS__PHONE', 'DEPARTMENTS__PROJECTS__END_DATE', 'ADDRESS__SUBURB', 'NAME', 'AGE', 'DEPARTMENTS__PROJECTS__START_DATE', 'LAPTOPS__QTY', 'DEPARTMENTS__PROJECTS', 'DEPARTMENTS__DEPARTMENT_ID', 'ADDRESS__STREET', 'ID', 'DEPARTMENTS', 'ADDRESS', 'CONTACTS', 'LAPTOPS__BRAND', 'LAPTOPS', 'ADDRESS__ZIP_CODE', 'DEPARTMENTS__DEPARTMENT_NAME', 'DEPARTMENTS__PROJECTS__PROJECT_NAME', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'DEPARTMENTS__PROJECTS__PROJECT_ID'}
+[0m
+2023-08-05 20:13:16,879:[33mWARNING   [0m LINE122   unpack_as_separate_tables.model_nested_JSON_objects
+	Terminated at 6 recursive calls
+[0m
+2023-08-05 20:13:16,881:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:16,882:[37mDEBUG     [0m LINE169   unpack_as_separate_tables.model_nested_JSON_objects
+	Process new df DEPARTMENTS__PROJECTS__TASKS
+[0m
+2023-08-05 20:13:16,882:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:16,981:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (6) recursive call starts with 5-row Dataframe. 
+	Global processed_fields = {'ADDRESS__STATE', 'CONTACTS__PHONE', 'DEPARTMENTS__PROJECTS__END_DATE', 'ADDRESS__SUBURB', 'NAME', 'AGE', 'DEPARTMENTS__PROJECTS__START_DATE', 'LAPTOPS__QTY', 'DEPARTMENTS__PROJECTS', 'DEPARTMENTS__DEPARTMENT_ID', 'ADDRESS__STREET', 'ID', 'DEPARTMENTS', 'ADDRESS', 'CONTACTS', 'LAPTOPS__BRAND', 'LAPTOPS', 'ADDRESS__ZIP_CODE', 'DEPARTMENTS__DEPARTMENT_NAME', 'DEPARTMENTS__PROJECTS__PROJECT_NAME', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'DEPARTMENTS__PROJECTS__PROJECT_ID'}
+[0m
+2023-08-05 20:13:17,009:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__TASKS
+[0m
+2023-08-05 20:13:17,338:[37mDEBUG     [0m LINE142   unpack_as_separate_tables.model_nested_JSON_objects
+	DEPARTMENTS__PROJECTS__TASKS is an OBJECT
+[0m
+2023-08-05 20:13:17,338:[32mSTART..........[0m expand_object_subfields   obj_field = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:17,550:[37mDEBUG     [0m LINE87    unpack_as_separate_tables.expand_object_subfields
+	DEPARTMENTS__PROJECTS__TASKS obj has 3 subfields: ['status', 'task_id', 'task_name']
+[0m
+2023-08-05 20:13:17,550:[37mDEBUG     [0m LINE93    unpack_as_separate_tables.expand_object_subfields
+	Expanded all subfields and drop the parent obj field.
+[0m
+2023-08-05 20:13:17,550:[32mSUCCEEDED......[0m expand_object_subfields   obj_field = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:17,551:[37mDEBUG     [0m LINE155   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS__TASKS" reach ends of path. "DEPARTMENTS__PROJECTS__TASKS" > processed_fields
+[0m
+2023-08-05 20:13:17,552:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:17,644:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (7) recursive call starts with 5-row Dataframe. 
+	Global processed_fields = {'ADDRESS__STATE', 'CONTACTS__PHONE', 'DEPARTMENTS__PROJECTS__END_DATE', 'ADDRESS__SUBURB', 'NAME', 'AGE', 'DEPARTMENTS__PROJECTS__START_DATE', 'LAPTOPS__QTY', 'DEPARTMENTS__PROJECTS', 'DEPARTMENTS__DEPARTMENT_ID', 'ADDRESS__STREET', 'ID', 'DEPARTMENTS__PROJECTS__TASKS', 'DEPARTMENTS', 'ADDRESS', 'CONTACTS', 'LAPTOPS__BRAND', 'LAPTOPS', 'ADDRESS__ZIP_CODE', 'DEPARTMENTS__DEPARTMENT_NAME', 'DEPARTMENTS__PROJECTS__PROJECT_NAME', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'DEPARTMENTS__PROJECTS__PROJECT_ID'}
+[0m
+2023-08-05 20:13:17,670:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__TASKS__STATUS
+[0m
+2023-08-05 20:13:17,977:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS__TASKS__STATUS" reach ends of path. "DEPARTMENTS__PROJECTS__TASKS__STATUS" > processed_fields
+[0m
+2023-08-05 20:13:17,977:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__TASKS__TASK_ID
+[0m
+2023-08-05 20:13:18,612:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS__TASKS__TASK_ID" reach ends of path. "DEPARTMENTS__PROJECTS__TASKS__TASK_ID" > processed_fields
+[0m
+2023-08-05 20:13:18,612:[37mDEBUG     [0m LINE128   unpack_as_separate_tables.model_nested_JSON_objects
+	Current field: DEPARTMENTS__PROJECTS__TASKS__TASK_NAME
+[0m
+2023-08-05 20:13:18,887:[37mDEBUG     [0m LINE160   unpack_as_separate_tables.model_nested_JSON_objects
+	"DEPARTMENTS__PROJECTS__TASKS__TASK_NAME" reach ends of path. "DEPARTMENTS__PROJECTS__TASKS__TASK_NAME" > processed_fields
+[0m
+2023-08-05 20:13:18,887:[32mSTART..........[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:18,987:[37mDEBUG     [0m LINE115   unpack_as_separate_tables.model_nested_JSON_objects
+	Func (8) recursive call starts with 5-row Dataframe. 
+	Global processed_fields = {'ADDRESS__STATE', 'CONTACTS__PHONE', 'DEPARTMENTS__PROJECTS__END_DATE', 'ADDRESS__SUBURB', 'NAME', 'DEPARTMENTS__PROJECTS__TASKS__STATUS', 'AGE', 'DEPARTMENTS__PROJECTS__START_DATE', 'LAPTOPS__QTY', 'DEPARTMENTS__PROJECTS__TASKS__TASK_NAME', 'DEPARTMENTS__PROJECTS', 'DEPARTMENTS__DEPARTMENT_ID', 'ADDRESS__STREET', 'ID', 'DEPARTMENTS__PROJECTS__TASKS', 'DEPARTMENTS', 'ADDRESS', 'CONTACTS', 'LAPTOPS__BRAND', 'LAPTOPS', 'ADDRESS__ZIP_CODE', 'DEPARTMENTS__DEPARTMENT_NAME', 'DEPARTMENTS__PROJECTS__PROJECT_NAME', 'CONTACTS__EMAIL', 'DATASET_SERVICE', 'DEPARTMENTS__PROJECTS__PROJECT_ID', 'DEPARTMENTS__PROJECTS__TASKS__TASK_ID'}
+[0m
+2023-08-05 20:13:18,987:[33mWARNING   [0m LINE122   unpack_as_separate_tables.model_nested_JSON_objects
+	Terminated at 8 recursive calls
+[0m
+2023-08-05 20:13:18,989:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:18,990:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:18,991:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS__TASKS[0m
+2023-08-05 20:13:18,992:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:18,993:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS__PROJECTS[0m
+2023-08-05 20:13:18,994:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS[0m
+2023-08-05 20:13:18,994:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = DEPARTMENTS[0m
+2023-08-05 20:13:18,995:[32mSUCCEEDED......[0m model_nested_JSON_objects parent_path = ENTRY[0m
+2023-08-05 20:13:18,995:[32mINFO      [0m LINE180   unpack_as_separate_tables.snowpark_main_handler
+	Results: TEMP_ENTRY_STRUCTURED
+[0m
+2023-08-05 20:13:19,637:[32mINFO      [0m LINE180   unpack_as_separate_tables.snowpark_main_handler
+	Results: TEMP_LAPTOPS_STRUCTURED
+[0m
+2023-08-05 20:13:20,436:[32mINFO      [0m LINE180   unpack_as_separate_tables.snowpark_main_handler
+	Results: TEMP_DEPARTMENTS_STRUCTURED
+[0m
+2023-08-05 20:13:21,157:[32mINFO      [0m LINE180   unpack_as_separate_tables.snowpark_main_handler
+	Results: TEMP_DEPARTMENTS__PROJECTS_STRUCTURED
+[0m
+2023-08-05 20:13:21,951:[32mINFO      [0m LINE180   unpack_as_separate_tables.snowpark_main_handler
+	Results: TEMP_DEPARTMENTS__PROJECTS__TASKS_STRUCTURED
+[0m

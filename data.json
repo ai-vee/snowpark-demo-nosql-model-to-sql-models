@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30,
+        "contacts": {
+            "email": "John@gm.com",
+            "phone": 456366666
+        },
+        "laptops": [
+            {
+                "brand": "Dell",
+                "qty": 1
+            },
+            {
+                "brand": "Asus",
+                "qty": 1
+            }
+        ],
+        "address": {
+            "street": "123 Main St",
+            "suburb": "ABC Suburb",
+            "state": "XYZ State",
+            "zip_code": "12345"
+        },
+        "departments": [
+            {
+                "department_id": 101,
+                "department_name": "IT",
+                "projects": [
+                    {
+                        "project_id": 1001,
+                        "project_name": "Project A",
+                        "start_date": "2023-01-01",
+                        "end_date": "2023-05-30",
+                        "tasks": [
+                            {
+                                "task_id": 20001,
+                                "task_name": "Task 1",
+                                "status": "Completed"
+                            },
+                            {
+                                "task_id": 20002,
+                                "task_name": "Task 2",
+                                "status": "In Progress"
+                            }
+                        ]
+                    },
+                    {
+                        "project_id": 1002,
+                        "project_name": "Project B",
+                        "start_date": "2023-02-15",
+                        "end_date": "2023-06-20",
+                        "tasks": [
+                            {
+                                "task_id": 20003,
+                                "task_name": "Task 1",
+                                "status": "Completed"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "age": 28,
+        "contacts": {
+            "email": "Jane@gm.com",
+            "phone": "0456362222"
+        },
+        "laptops": [
+            {
+                "brand": "Dell",
+                "qty": 2
+            }
+        ],
+        "address": {
+            "street": "456 Elm St",
+            "suburb": "DEF Suburb",
+            "state": "LMN State",
+            "zip_code": "67890"
+        },
+        "departments": [
+            {
+                "department_id": 102,
+                "department_name": "Marketing",
+                "projects": [
+                    {
+                        "project_id": 1003,
+                        "project_name": "Project C",
+                        "start_date": "2023-03-10",
+                        "end_date": "2023-07-15",
+                        "tasks": [
+                            {
+                                "task_id": 20004,
+                                "task_name": "Task 1",
+                                "status": "Completed"
+                            },
+                            {
+                                "task_id": 20005,
+                                "task_name": "Task 2",
+                                "status": "Not Started"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
