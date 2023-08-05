@@ -11,14 +11,15 @@ generate_relational_tables_from_nested_JSON.py
 - This fuction is wrapped by a Snowpark Main Handler, logger.py is attached and all can be deployed as an sproc.
 
 ## Logging
-- Stream Handler logs at INFO Level
-![image.png](attachment:image.png)
+#### Stream Handler logs at INFO Level
 
-- File Handler logs events at DEBUG Level and out LOG FILES at ./logs
+  ![Alt text](./screenshots/stream_handler.png)
+#### File Handler logs events at DEBUG Level and out LOG FILES at ./logs
+
 
 ## Usage Instruction
 Via docstring.
-![image-3.png](attachment:image-3.png)
 
+![Alt text](./screenshots/usage.png)
 ## Example
 demo.ipynb
